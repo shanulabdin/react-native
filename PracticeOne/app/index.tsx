@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import { Greeting } from "../components/Greeting";
+import { Boxes } from "../components/Boxes";
 
 export default function Index() {
   return (
@@ -10,7 +11,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Greeting />
+      <Boxes />
     </View>
   );
 }
