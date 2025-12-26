@@ -1,9 +1,10 @@
 import { ProfileCard } from "../components/ProfileCard";
 import { TitleText } from "../components/TitleText";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    <>
+    <SafeAreaView style={{ flex: 1, paddingTop: 20 }}>
       <TitleText 
         text={"Team Members"}
       />
@@ -25,6 +26,6 @@ export default function Index() {
         profession={"Developer"}
         bgColor="lightpink"
       />
-    </>
+    </SafeAreaView>
   );
 }
