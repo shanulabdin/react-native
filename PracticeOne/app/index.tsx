@@ -9,7 +9,11 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={{
+        fontSize: 32,
+        color: "Black",
+        fontWeight: "bold",
+      }}>Shan ul Abdin</Text>
     </View>
   );
 }
