@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export const ProfileCard = ({ name, age, profession }) => {
+export const ProfileCard = ({ name, age, profession,bgColor }) => {
   return (
     <View style={{
       alignItems: "center",
@@ -9,6 +9,7 @@ export const ProfileCard = ({ name, age, profession }) => {
       borderWidth: 1,
       borderColor: "lightgray",
       borderRadius: 10,
+      backgroundColor: bgColor || "white",
     }}>
       <Text style={{
         fontSize: 24,

@@ -7,16 +7,25 @@ export default function Index() {
         name="John Doe"
         age={30}
         profession="Software Engineer"
+        bgColor=""
       />
       <ProfileCard
         name="Ali"
         age={22}
         profession={"Student"}
+        bgColor=""
       />
       <ProfileCard
         name="Sara"
         age={25}
         profession={"Developer"}
+        bgColor="lightpink"
+      />
+      <ProfileCard
+        name="Fatima"
+        age={30}
+        profession={"Designer"}
+        bgColor="lightpink"
       />
     </>
   );
