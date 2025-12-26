@@ -1,6 +1,12 @@
 import { Text, View } from "react-native";
+type ProfileCardProps = {
+  name: string;
+  age: number;
+  profession: string;
+  bgColor?: string;
+};
 
-export const ProfileCard = ({ name, age, profession,bgColor }) => {
+export const ProfileCard = ({ name, age, profession, bgColor }: ProfileCardProps) => {
   return (
     <View style={{
       alignItems: "center",
