@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import { Greeting } from "../components/Greeting";
 
 export default function Index() {
   return (
@@ -9,11 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={{
-        fontSize: 32,
-        color: "Black",
-        fontWeight: "bold",
-      }}>Shan ul Abdin</Text>
+      <Greeting />
     </View>
   );
 }
