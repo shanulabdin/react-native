@@ -25,12 +25,6 @@ export default function Index() {
         profession={"Developer"}
         bgColor="lightpink"
       />
-      <ProfileCard
-        name="Fatima"
-        age={30}
-        profession={"Designer"}
-        bgColor="lightpink"
-      />
     </>
   );
 }
