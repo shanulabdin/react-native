@@ -1,18 +1,11 @@
-import { Text, View } from "react-native";
-import { Greeting } from "../components/Greeting";
-import { Boxes } from "../components/Boxes";
-import { Quote } from "../components/Quote";
+import { ProfileCard } from "../components/ProfileCard";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Quote />
-    </View>
+    <ProfileCard
+      name="John Doe"
+      age={30}
+      profession="Software Engineer" 
+    />
   );
 }
