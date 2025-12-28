@@ -1,6 +1,7 @@
 import { ProfileCard } from "../../components/ProfileCard";
 import { TitleText } from "../../components/TitleText";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { COLORS } from "../../constants/colors";
 
 export default function Index() {
   return (
@@ -22,7 +23,7 @@ export default function Index() {
         name="Sara"
         age={25}
         profession={"Developer"}
-        bgColor="lightpink"
+        bgColor={COLORS.background}
       />
     </SafeAreaView>
   );

@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import React from "react";
 import { ImageBackground, Image } from "react-native";
 import { icons } from "../../constants/icons";
+import { COLORS } from "../../constants/colors";
 
 const TabIcon = ({ focused }: any) => {
   if (focused) {
@@ -46,20 +47,29 @@ const _Layout = () => {
         headerShown: false,
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "gray",
+        
+        tabBarStyle: {
+          height: 100,
+          paddingBottom: 20,
+          backgroundColor: COLORS.background,
+        },
+
         tabBarIcon: ({ focused }) => {
           return <TabIcon
             focused={focused}
           />
         },
-        // tabBarIconStyle: { 
-        //   display: "none", 
-        //   height: 0,
-        //   width: 0
-        // },
+        tabBarIconStyle: { 
+          height: 20,
+          width: 20,
+          marginTop: 5,
+          marginBottom: 5,
+        },
 
         tabBarLabelStyle: {
           fontSize: 16,
           fontWeight: "600",
+          color: COLORS.text,
         },
       }}
     >

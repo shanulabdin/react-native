@@ -1,3 +1,4 @@
+import { COLORS } from "@/constants/colors";
 import { Text, View } from "react-native";
 type ProfileCardProps = {
   name: string;
@@ -21,17 +22,20 @@ export const ProfileCard = ({ name, age, profession, bgColor }: ProfileCardProps
         fontSize: 24,
         fontWeight: "bold",
         marginBottom: 10,
+        color: COLORS.text
       }}>
         {name}
       </Text>
       <Text style={{
         fontSize: 18,
         marginBottom: 5,
+        color: COLORS.text
       }}>
         {age}
       </Text>
       <Text style={{
         fontSize: 18,
+        color: COLORS.text
       }}>
         {profession}
       </Text>
