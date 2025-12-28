@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { ImageBackground, View } from "react-native";
-import { Image } from "react-native";
+import { ImageBackground, Image } from "react-native";
+import { icons } from "../../constants/icons";
 
 const TabIcon = ({ focused }: any) => {
   if (focused) {
@@ -13,7 +13,7 @@ const TabIcon = ({ focused }: any) => {
           justifyContent: "center",
           alignItems: "center",
         }}
-        source={require("../../constants/img.png")}
+        source={icons.tabIcon}
       >
         <Image
           style={{ width: 20, height: 20 }}
@@ -30,7 +30,7 @@ const TabIcon = ({ focused }: any) => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      source={require("../../constants/img2.png")}
+      source={icons.tabIcon2}
     >
       <Image
         style={{ width: 20, height: 20 }}
