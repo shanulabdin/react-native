@@ -1,5 +1,5 @@
-import { ProfileCard } from "../components/ProfileCard";
-import { TitleText } from "../components/TitleText";
+import { ProfileCard } from "../../components/ProfileCard";
+import { TitleText } from "../../components/TitleText";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
