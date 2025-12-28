@@ -14,7 +14,7 @@ export const ProfileCard = ({ name, age, profession, bgColor }: ProfileCardProps
       padding: 20,
       margin: 20,
       borderWidth: 1,
-      borderColor: "lightgray",
+      borderColor: COLORS.border,
       borderRadius: 10,
       backgroundColor: bgColor || "white",
     }}>

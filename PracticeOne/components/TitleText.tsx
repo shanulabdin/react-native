@@ -1,3 +1,4 @@
+import { COLORS } from "@/constants/colors";
 import { Text } from "react-native";
 
 type TitleTextProps = {
@@ -8,9 +9,13 @@ export const TitleText = ({ text }: TitleTextProps) => {
   return (
     <Text style={{
       fontSize: 28,
+      color: COLORS.text,
       fontWeight: "bold",
       textAlign: "center",
-      marginTop: 20,
+      paddingTop: 20,
+      paddingBottom: 20,
+      borderBottomWidth: 1,
+      borderBottomColor: COLORS.border,
     }}>
       {text}
     </Text>

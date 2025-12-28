@@ -45,21 +45,24 @@ const _Layout = () => {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "tomato",
-        tabBarInactiveTintColor: "gray",
-        
+
         tabBarStyle: {
           height: 100,
           paddingBottom: 20,
           backgroundColor: COLORS.background,
+          marginTop: -25,
+          borderTopWidth: 1,
+          borderTopColor: COLORS.text, 
         },
+        tabBarActiveTintColor: "tomato",
+        tabBarInactiveTintColor: "gray",
 
         tabBarIcon: ({ focused }) => {
           return <TabIcon
             focused={focused}
           />
         },
-        tabBarIconStyle: { 
+        tabBarIconStyle: {
           height: 20,
           width: 20,
           marginTop: 5,
